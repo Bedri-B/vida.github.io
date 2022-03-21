@@ -237,16 +237,16 @@
        link.href = "https://linkedin.com/" + linked_link;
        link.setAttribute("target", "_blank");
  
-       if (data["instagram"]) {
+       if (data["instagram"] != "*-*empty*-*") {
          mi_div_social.appendChild(insta);
        }
-       if (data["facebook"]) {
+       if (data["facebook"] != "*-*empty*-*") {
          mi_div_social.appendChild(fb);
-       }
-       if (data["linkedin"]) {
+       } 
+       if (data["linkedin"] != "*-*empty*-*") {
          mi_div_social.appendChild(link);
        }
-       if (data["twitter"]) {
+       if (data["twitter"] != "*-*empty*-*") {
          mi_div_social.appendChild(tw);
        }
  
